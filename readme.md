@@ -47,7 +47,7 @@
 ### Ex-DPC
 * Uncomment line 211 if you need cluster labels of the exact answer.
 
-### Approximate algorithms
+### Approximation algorithms
 * If you want to compute rand index, you have to run Ex-DPC and obtain the cluster labels.
 
 ## Citation
