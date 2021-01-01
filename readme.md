@@ -63,5 +63,5 @@ If you use our implementation, please cite the following paper.
 ``` 
 
 ## Lisence
-Copyright (c) 2020 Daichi Amagata
-Released under the MIT license
+Copyright (c) 2020 Daichi Amagata  
+This software is released under the MIT license.
