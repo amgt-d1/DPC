@@ -52,11 +52,13 @@
 
 ## Citation
 @inproceedings{amagata2021fast,  
-&nbsp;  title={Fast Density-Peaks Clustering: Multicore-based Parallelization Approach},  
-&nbsp;  author={Amagata, Daichi and Hara, Takahiro},  
-&nbsp;&nbsp;  booktitle={SIGMOD},  
-&nbsp;  pages={xxx--xxx},  
-&nbsp;  year={2021}  
+	title={Fast Density-Peaks Clustering: Multicore-based Parallelization Approach},  
+	author={Amagata, Daichi and Hara, Takahiro},  
+	booktitle={SIGMOD},  
+	pages={xxx--xxx},  
+	year={2021}  
 }
 
 ## Lisence
+Copyright (c) 2020 Daichi Amagata
+Released under the MIT license
