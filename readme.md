@@ -1,6 +1,7 @@
 ## Introduction
 * This repository provides implementations of Ex-DPC, Approx-DPC, and S-Approx-DPC.
 * They are fast algorithms for [density-peaks clustering](https://science.sciencemag.org/content/344/6191/1492.full) (proposed in Science).
+* As for the details about these algorithms, please read our SIGMOD2021 paper, Fast Density-Peaks Clustering: Multicore-based Parallelization Approach.
 
 ## Requirement
 *  [spatial liberary](http://spatial.sourceforge.net/)
