@@ -51,6 +51,8 @@
 * If you want to compute rand index, you have to run Ex-DPC and obtain the cluster labels.
 
 ## Citation
+If you use our implementation, please cite the following paper.
+``` 
 @inproceedings{amagata2021fast,  
     title={Fast Density-Peaks Clustering: Multicore-based Parallelization Approach},  
     author={Amagata, Daichi and Hara, Takahiro},  
@@ -58,6 +60,7 @@
     pages={xxx--xxx},  
     year={2021}  
 }
+``` 
 
 ## Lisence
 Copyright (c) 2020 Daichi Amagata
