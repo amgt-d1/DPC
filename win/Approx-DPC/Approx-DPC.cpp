@@ -254,7 +254,11 @@ int main() {
 	kdtree_build();
 
 	// display current time & parameters
-	std::cout << " data id: " << dataset_id << "\t" << "dimensionality: " << dimensionality << "\t" << "sampling rate: " << sampling_rate << "\t" << "cutoff-disntance: " << cutoff << "\t" << "core number: " << core_no << "\n\n";
+	std::cout << " data id: " << dataset_id << "\n";
+	std::cout << " dimensionality: " << dimensionality << "\n";
+	std::cout << " sampling rate: " << sampling_rate << "\n";
+	std::cout << " cutoff-distance: " << cutoff << "\n";
+	std::cout << " thread number: " << core_no << "\n\n";
 
 	// grid mapping
 	grid_mapping();
