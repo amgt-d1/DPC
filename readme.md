@@ -12,7 +12,7 @@
 ## How to use
 * We prepared codes for Windows OS (Visual Studio) and Linux (Ubuntu).
 * Approx-DPC is available only for Windows OS.
-	* This is bacause of the usage of `concurrent_vector.h` and `concurrent_unordered_map.h`.
+	* This is because of the usage of `concurrent_vector.h` and `concurrent_unordered_map.h`.
 	* For Linux-based OS, the above functions can be replaced by `#pragma omp critical` (but the above functions are faster in our environment).
 * We assume low-dimensional datasets, as we use a kd-tree.
 	* Implementation is based on https://github.com/gishi523/kd-tree and spatial library.
