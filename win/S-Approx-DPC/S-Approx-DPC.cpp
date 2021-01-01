@@ -188,7 +188,7 @@ int main() {
 		<< " dimensionality: " << dimensionality << "\n"
 		<< " sampling rate: " << sampling_rate << "\n"
 		<< " sampling rate (cell): " << sampling_rate_cell << "\n"
-		<< " cutoff-disntance: " << cutoff << "\n"
+		<< " cutoff-distance: " << cutoff << "\n"
 		<< " core number: " << core_no << "\n";
 	std::cout << "-----------------\n\n";
 
