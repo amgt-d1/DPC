@@ -190,7 +190,7 @@ int main() {
 	std::cout << " data id: " << dataset_id << "\n";
 	std::cout << " dimensionality: " << dimensionality << "\n";
 	std::cout << " sampling rate: " << sampling_rate << "\n";
-	std::cout << " cutoff-disntance: " << cutoff << "\n";
+	std::cout << " cutoff-distance: " << cutoff << "\n";
 	std::cout << " #threads: " << core_no << "\n";
 	std::cout << " ---------\n\n";
 
