@@ -64,4 +64,4 @@ If you use our implementation, please cite the following paper.
 
 ## License
 Copyright (c) 2020 Daichi Amagata  
-This software is released under the [MIT license](https://github.com/amgt-d1/DPC/blob/main/lisence.txt).
+This software is released under the [MIT license](https://github.com/amgt-d1/DPC/blob/main/license.txt).
