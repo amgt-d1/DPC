@@ -53,7 +53,7 @@
 ## Citation
 If you use our implementation, please cite the following paper.
 ``` 
-@inproceedings{amagata2021fast,  
+@inproceedings{amagata2021dpc,  
     title={Fast Density-Peaks Clustering: Multicore-based Parallelization Approach},  
     author={Amagata, Daichi and Hara, Takahiro},  
     booktitle={SIGMOD},  
