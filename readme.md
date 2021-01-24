@@ -54,14 +54,14 @@
 ## Citation
 If you use our implementation, please cite the following paper.
 ``` 
-@inproceedings{amagata2021dod,  
-    title={Fast and Exact Outlier Detection in Metric Spaces: A Proximity Graph-based Approach},  
-    author={Amagata, Daichi and Onizuka, Makoto and Hara, Takahiro},  
+@inproceedings{amagata2021dpc,  
+    title={Fast Density-Peaks Clustering: Multicore-based Parallelization Approach},  
+    author={Amagata, Daichi and Hara, Takahiro},  
     booktitle={SIGMOD},  
     pages={xxx--xxx},  
     year={2021}  
 }
-``` 
+```
 
 ## License
 Copyright (c) 2020 Daichi Amagata  
