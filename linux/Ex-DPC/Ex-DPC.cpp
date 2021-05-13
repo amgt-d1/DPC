@@ -68,8 +68,6 @@ void computation_dependency() {
 
 	for (unsigned int i = 0; i < dataset_pt.size(); ++i) {
 
-		//++nonnoise_cnt;
-
 		if (dataset_pt[i].local_density < local_density_min) break;
 
 		// NN search
