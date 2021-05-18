@@ -25,7 +25,7 @@
 * Enable `OpenMP`. 
 	* You may need `/Zc:twoPhase-` as an additional option at command line of C/C++ in property.
 * To complie, use `/Ox` option.
-* For Approx-DPC, set NO as `SDL check`.
+* Set NO as `SDL check`.
 
 ### Linux
 * Compile: `g++ -O3 Ex-DPC.cpp -o exdpc.out -fopenmp` and run: `./exdpc.out`.
