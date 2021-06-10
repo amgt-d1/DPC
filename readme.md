@@ -4,7 +4,7 @@
 * As for the details about these algorithms, please read our SIGMOD2021 paper, [Fast Density-Peaks Clustering: Multicore-based Parallelization Approach](https://).
 
 ## Requirement
-*  [spatial liberary](http://spatial.sourceforge.net/)
+*  [spatial library](http://spatial.sourceforge.net/)
 	* We used version 2.1.8.
 * Boost 1.67.0
 	* We have not confirmed the availability of the other version.
