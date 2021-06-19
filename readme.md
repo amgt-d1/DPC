@@ -59,7 +59,7 @@ If you use our implementation, please cite the following paper.
     title={Fast Density-Peaks Clustering: Multicore-based Parallelization Approach},  
     author={Amagata, Daichi and Hara, Takahiro},  
     booktitle={SIGMOD},  
-    pages={xxx--xxx},  
+    pages={49--61},  
     year={2021}  
 }
 ```
