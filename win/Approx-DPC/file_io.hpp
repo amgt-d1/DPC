@@ -38,7 +38,8 @@ double cpu_local_density = 0;
 double cpu_dependency = 0;
 double cpu_label = 0;
 double rand_index = 0;
-concurrency::concurrent_vector<unsigned int> cluster_centers;
+std::vector<unsigned int> cluster_centers;
+//concurrency::concurrent_vector<unsigned int> cluster_centers;
 std::unordered_map<unsigned int, unsigned int> label_set;
 
 
