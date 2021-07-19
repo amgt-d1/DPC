@@ -12,9 +12,6 @@
 
 ## How to use
 * We prepared codes for Windows OS (Visual Studio) and Linux (Ubuntu).
-* Approx-DPC is available only for Windows OS.
-	* This is because of the usage of `concurrent_vector.h` and `concurrent_unordered_map.h`.
-	* For Linux-based OS, the above functions can be replaced by `#pragma omp critical` (but the above functions are faster in our environment).
 * We assume low-dimensional datasets, as we use a kd-tree.
 	* Implementation is based on https://github.com/gishi523/kd-tree and spatial library.
 
@@ -28,8 +25,12 @@
 * Set NO as `SDL check`.
 
 ### Linux
-* Compile: `g++ -O3 Ex-DPC.cpp -o exdpc.out -fopenmp` and run: `./exdpc.out`.
-* Compile: `g++ -O3 S-Approx-DPC.cpp -o sapproxdpc.out -fopenmp` and run: `./sapproxdpc.out`.
+* Ex-DPC
+	* Compile: `g++ -O3 Ex-DPC.cpp -o exdpc.out -fopenmp` and run: `./exdpc.out`.
+* Approc-DPC
+	* Compile: `g++ -O3 main.cpp -o approxdpc.out -fopenmp` and run: `./approxdpc.out`.
+* S-Approc-DPC
+	* Compile: `g++ -O3 S-Approx-DPC.cpp -o sapproxdpc.out -fopenmp` and run: `./sapproxdpc.out`.
 
 ### Datasets
 * As an example, we have prepared a 2-dimensional synthetic dataset used in our paper.
