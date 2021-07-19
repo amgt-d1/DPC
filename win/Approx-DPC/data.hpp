@@ -5,7 +5,7 @@
 #include <unordered_set>
 #include <unordered_map>
 //#include <concurrent_vector.h>
-#include <concurrent_unordered_map.h>
+//#include <concurrent_unordered_map.h>
 #include "kdtree.hpp"
 
 
@@ -332,8 +332,8 @@ public:
 
 
 // grid
-concurrency::concurrent_unordered_map<std::string, cell> grid;
-
+//concurrency::concurrent_unordered_map<std::string, cell> grid;
+std::unordered_map<std::string, cell> grid;
 
 // definition of "string-cost pair"
 struct sc_pair {
