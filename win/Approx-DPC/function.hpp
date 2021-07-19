@@ -291,6 +291,7 @@ void dependent_point_computation_index(std::vector<std::vector<unsigned int>>& i
 					dataset_pt[idx_partitioned[i][j]].label = dataset_pt[idx_partitioned[i][j]].id;
 
 					// store cluster center
+					#pragma omp critical
 					cluster_centers.push_back(dataset_pt[idx_partitioned[i][j]].id);
 				}
 			}
