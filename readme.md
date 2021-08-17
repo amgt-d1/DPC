@@ -48,7 +48,7 @@
 
 ### Ex-DPC
 * Uncomment line 211 if you need cluster labels of the exact answer.
-* If you are interested in Ex-DPC+, check [here](https://github.com/amgt-d1/D-DPC/tree/main/D-DPC).
+* If you are interested in Ex-DPC+, check [here](https://github.com/amgt-d1/D-DPC).
 
 ### Approximation algorithms
 * If you want to compute rand index, you have to run Ex-DPC and obtain the cluster labels.
