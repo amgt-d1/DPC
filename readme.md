@@ -7,7 +7,7 @@
 *  [spatial library](http://spatial.sourceforge.net/)
 	* We used version 2.1.8.
 * Boost 1.67.0
-	* We have not confirmed the availability of the other version.
+	* We have not confirmed the availability of the other versions.
 * The source codes of DPC algorithms have to be changed based on your paths of the above libraries.
 
 ## How to use
