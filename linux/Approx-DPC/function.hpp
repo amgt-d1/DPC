@@ -116,9 +116,11 @@ void dependent_point_computation_constant_order() {
 void kdforest_build(std::vector<unsigned int>& idx, std::vector<container_type> &kdforest, std::vector<std::vector<pts>>& dataset_subsets) {
 
 	// compute subset size
-	float subsets = powf(dataset_pt.size(), (1.0 / dimensionality));
-	subsets = powf(subsets, (float)dimensionality / (dimensionality + 1));
-	subset_size = (unsigned int)subsets + 1;
+	//float subsets = powf(dataset_pt.size(), (1.0 / dimensionality));
+	//subsets = powf(subsets, (float)dimensionality / (dimensionality + 1));
+	//subset_size = (unsigned int)subsets + 1;
+	subset_size = std::log2f((float)dataset_pt.size());
+	std::cout << " s: " << subset_size << "\n";
 
 	// variables for partition
 	std::vector<pts> subset;
