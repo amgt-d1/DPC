@@ -198,7 +198,12 @@ void computation_label_propagation() {
 
 	// init stack
 	std::deque<unsigned int> stack;
-	for (unsigned int i = 0; i < cluster_centers.size(); ++i) stack.push_back(cluster_centers[i]);
+	unsigned int cnt = 0;
+	for (unsigned int i = 0; i < cluster_centers.size(); ++i) {
+		stack.push_back(cluster_centers[i]);
+		dataset_pt[cluster_centers[i]].label = cnt;
+		++cnt;
+	}
 
 	unsigned int idx = 0;
 	unsigned int id = 0;
@@ -238,14 +243,6 @@ void computation_label_propagation() {
 	end = std::chrono::system_clock::now();
 	cpu_label = std::chrono::duration_cast<std::chrono::microseconds>(end - start).count();
 	std::cout << " label propagation time: " << cpu_label << "[microsec]\n\n";
-
-	// accuracy computation
-	for (unsigned int i = 0; i < dataset_pt.size(); ++i) {
-
-		if (dataset_pt[i].label == label_set[dataset_pt[i].id]) ++accuracy;
-	}
-
-//	output_coord_label();
 }
 
 
