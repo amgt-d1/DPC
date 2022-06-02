@@ -11,20 +11,10 @@
 * The source codes of DPC algorithms have to be changed based on your paths of the above libraries.
 
 ## How to use
-* We prepared codes for Windows OS (Visual Studio) and Linux (Ubuntu).
 * We assume low-dimensional datasets, as we use a kd-tree.
-	* Implementation is based on https://github.com/gishi523/kd-tree and spatial library.
+* Implementation is based on https://github.com/gishi523/kd-tree and spatial library.
 
-### Visual Studio 2019 (64-bit)
-* Make a new project -> console application.
-* Put our source codes into the project as with `dataset`, `parameter`, and `result` folders.
-* Include the paths to `spatial library` and `boost library`.
-* Enable `OpenMP`. 
-	* You may need `/Zc:twoPhase-` as an additional option at command line of C/C++ in property.
-* To complie, use `/Ox` option.
-* Set NO as `SDL check`.
-
-### Linux
+### Linux (Ubuntu)
 * Ex-DPC
 	* Compile: `g++ -O3 Ex-DPC.cpp -o exdpc.out -fopenmp` and run: `./exdpc.out`.
 * Approc-DPC
