@@ -204,9 +204,6 @@ int main() {
 	// cluster assignment
 	computation_label_propagation();
 
-	// compute rand index
-	compute_rand_index();
-
 	// output computation time
 	output_cpu_time();
 
