@@ -33,7 +33,7 @@
 	* Compile the code and run .exe or .out file.
 
 ### Parameters
-* Set some value in the corresponding txt file in `parameter` or `_parameter`.
+* Set some value in the corresponding txt file in `_parameter`.
 * For \rho_min and \delta_min, we specify them in `file_io.hpp`.
 
 ### Ex-DPC
