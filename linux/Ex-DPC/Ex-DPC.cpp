@@ -1,4 +1,5 @@
 ﻿#include "file_io.hpp"
+#include <cfloat>
 
 
 // unsigned int nonnoise_cnt = 0;
@@ -76,7 +77,6 @@ void computation_dependency() {
 		if (i >= 1) {
 			spatial::neighbor_iterator<container_type> iter = neighbor_begin(kd_tree, dataset_pt[i]);
 			dataset_pt[i].NN_dist = distance(iter);
-			dataset_pt[i].dependent_point = iter->id;
 
 			// store reverse NN
 			rnn[iter->id].push_back(i);
