@@ -9,7 +9,7 @@
 
 
 // parameter & variable
-const unsigned int dimensionality = 4;	// house: 4, PAMAP2: 4, Farm: 5, Sensor 8
+const unsigned int dimensionality = 4;
 const float dist_max = 1000000000;
 
 // declear class "pt"
