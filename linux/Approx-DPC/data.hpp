@@ -322,7 +322,6 @@ public:
 
 
 // grid
-//concurrency::concurrent_unordered_map<std::string, cell> grid;
 std::unordered_map<std::string, cell> grid;
 
 // definition of "string-cost pair"
