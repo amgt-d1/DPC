@@ -25,7 +25,7 @@
 ### Datasets
 * As an example, we have prepared a 2-dimensional synthetic dataset used in our paper.
 * If you want to test your dataset,
-	* Put the file at `_dataset` or `dataset` directory.
+	* Put the file at `dataset` directory.
 	* Assign a unique dataset ID.
 	* Set the dimensionality at `data.hpp`.
 	* Write codes for inputing the data file in `input_data()` function of `file_io.hpp`.  
