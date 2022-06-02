@@ -60,11 +60,13 @@ void computation_local_density() {
 // dependency check
 void computation_dependency() {
 
-	std::deque<double> array_time;
-
 	start = std::chrono::system_clock::now();
-
+	
 	std::vector<unsigned int> buf;
+	unsigned int cnt = 0;
+
+	// sort
+	std:sort(dataset_pt.begin(), dataset_pt.end(), desc_local_density);
 
 	for (unsigned int i = 0; i < dataset_pt.size(); ++i) {
 
@@ -74,28 +76,27 @@ void computation_dependency() {
 		if (i >= 1) {
 			spatial::neighbor_iterator<container_type> iter = neighbor_begin(kd_tree, dataset_pt[i]);
 			dataset_pt[i].NN_dist = distance(iter);
+			dataset_pt[i].dependent_point = iter->id;
 
 			// store reverse NN
 			rnn[iter->id].push_back(i);
 		}
 		else {
-			dataset_pt[i].NN_dist = 0;
-			float temp = 0;
-			for (unsigned int j = 1; j < dataset_pt.size(); ++j) {
-				temp = computation_distance(dataset_pt[i], dataset_pt[j]);
-				if (temp > dataset_pt[i].NN_dist) dataset_pt[i].NN_dist = temp;
-			}
+
+			dataset_pt[i].NN_dist = FLT_MAX;
 		}
 
 		// check cluster center
 		if (delta_min <= dataset_pt[i].NN_dist && dataset_pt[i].local_density >= local_density_min) {
 
 			// set label as itsself
-			dataset_pt[i].label = dataset_pt[i].id;
+			//dataset_pt[i].label = dataset_pt[i].id;
+			dataset_pt[i].label = cnt;
+			++cnt;
 
 			// store cluster center index
 			cluster_centers.push_back(i);
-		}
+		}		
 
 		// insert
 		if (i < dataset_pt.size() - 1) {
@@ -110,17 +111,10 @@ void computation_dependency() {
 			}
 		}
 	}
+	
 	end = std::chrono::system_clock::now();
 	double t = std::chrono::duration_cast<std::chrono::microseconds>(end - start).count();
 	std::cout << " dependency computation time: " << t << "[microsec]\n\n";
-
-	//unsigned int noise_cnt = dataset_pt.size() - nonnoise_cnt;
-	//std::cout << " noise count: " << noise_cnt << "\t" << "noise ratio: " << (double)noise_cnt / dataset_pt.size() << "\n\n";
-
-	cpu_dependency = t;
-
-	// output decision graph
-//	output_decision_graph();
 }
 
 // label propagation
