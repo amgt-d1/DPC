@@ -30,7 +30,7 @@
 	* Set the dimensionality at `data.hpp`.
 	* Write codes for inputing the data file in `input_data()` function of `file_io.hpp`.  
 	* Add a direcotry in `result` and update the function `compute_direcotry()`.
-	* Compile the code and run .exe or .out file.
+	* Compile the code and run .out file.
 
 ### Parameters
 * Set some value in the corresponding txt file in `_parameter`.
