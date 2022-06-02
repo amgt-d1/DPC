@@ -1,6 +1,6 @@
-#include "/mnt/d/_external_lib/spatial_2.1.8/src/point_multiset.hpp"	// change the path based on your environment
-#include "/mnt/d/_external_lib/spatial_2.1.8/src/idle_point_multiset.hpp"
-#include "/mnt/d/_external_lib/spatial_2.1.8/src/bits/spatial_neighbor.hpp"
+#include "../spatial_2.1.8/src/point_multiset.hpp"	// change the path based on your environment
+#include "../spatial_2.1.8/src/idle_point_multiset.hpp"
+#include "../spatial_2.1.8/src/bits/spatial_neighbor.hpp"
 #include <array>
 #include <unordered_map>
 #include "kdtree.hpp"
