@@ -29,7 +29,7 @@
 	* Assign a unique dataset ID.
 	* Set the dimensionality at `data.hpp`.
 	* Write codes for inputing the data file in `input_data()` function of `file_io.hpp`.  
-	* Add a direcotry in `result` and update the function `compute_direcotry()`.
+	* Add a directory in `result` and update the function `compute_direcotry()`.
 	* Compile the code and run .out file.
 
 ### Parameters
