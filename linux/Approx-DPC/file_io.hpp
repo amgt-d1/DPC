@@ -201,7 +201,7 @@ void output_cpu_time() {
 
 void output_label_() {
 
-	std::string f_name = "result/" + directory_comp() + "/Label/lab_id(" + std::to_string(dataset_id) + ")_cutoff(" + std::to_string(cutoff) + ").txt";
+	std::string f_name = "result/lab_id(" + std::to_string(dataset_id) + ")_cutoff(" + std::to_string(cutoff) + ").txt";
 	
 	std::ofstream file;
 	file.open(f_name.c_str(), std::ios::out | std::ios::app);
