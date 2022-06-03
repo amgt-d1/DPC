@@ -120,7 +120,7 @@ void kdforest_build(std::vector<unsigned int>& idx, std::vector<container_type> 
 	//subsets = powf(subsets, (float)dimensionality / (dimensionality + 1));
 	//subset_size = (unsigned int)subsets + 1;
 	subset_size = std::log2f((float)dataset_pt.size());
-	std::cout << " s: " << subset_size << "\n";
+	//std::cout << " s: " << subset_size << "\n";
 
 	// variables for partition
 	std::vector<pts> subset;
