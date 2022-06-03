@@ -200,7 +200,7 @@ int main() {
 	//output_cpu_time();
 
 	// output label
-	//output_label();
+	output_label_();
 
 	return 0;
 }
