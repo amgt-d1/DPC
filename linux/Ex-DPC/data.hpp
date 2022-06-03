@@ -71,11 +71,10 @@ std::unordered_map<unsigned int, std::vector<unsigned int>> rnn;	// key: id, val
 
 
 // sort descending order of local density
-bool desc_local_density(const pt & l, const pt & r) {
-	return l.local_density > r.local_density;
-}
+bool desc_local_density(const pt & l, const pt & r) { return l.local_density > r.local_density; }
 
 // sort descending order of dependent distance
-bool desc_dependency_distance(const pt & l, const pt & r) {
-	return l.NN_dist > r.NN_dist;
-}
+bool desc_dependency_distance(const pt & l, const pt & r) { return l.NN_dist > r.NN_dist; }
+
+// sort ascending order of ID
+bool asc_id(const pt& l, const pt& r) { return l.id < r.id; }
