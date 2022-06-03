@@ -292,6 +292,7 @@ int main() {
 	// output computation time
 	output_cpu_time();
 
+	//output_label_();
 
 	return 0;
 }
