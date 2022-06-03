@@ -201,7 +201,6 @@ int main() {
 
 	// output label
 	//output_label();
-	//output_coord_label();
 
 	return 0;
 }
