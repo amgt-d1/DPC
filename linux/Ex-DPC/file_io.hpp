@@ -202,35 +202,23 @@ void output_label() {
 	file.close();
 }
 
-// output label with coordinate
-void output_coord_label() {
+// output label (only labels as a list)
+void output_label_() {
+	std::string f_name = "result/" + directory_comp() + "/Label/lab_id(" + std::to_string(dataset_id) + ")_sampling_rate(" + std::to_string(sampling_rate) + ")_cutoff(" + std::to_string(cutoff) + ").txt";
+	
+	std::ofstream file;
+	file.open(f_name.c_str(), std::ios::out | std::ios::app);
 
-	// partition by label
-	std::unordered_map<unsigned int, std::vector<unsigned int>> temp_set;
-	for (unsigned int i = 0; i < dataset_pt.size(); ++i) temp_set[dataset_pt[i].label].push_back(i);
-
-	for (unsigned int i = 0; i < cluster_centers.size(); ++i) {
-
-		auto it = temp_set.find(dataset_pt[cluster_centers[i]].id);
-
-		std::string f_name = "result/" + directory_comp() + "/Label/label-" + std::to_string(it->first) + "_id(" + std::to_string(dataset_id) + ")_cutoff(" + std::to_string(cutoff) + ").txt";
-		std::ofstream file;
-		file.open(f_name.c_str(), std::ios::out | std::ios::app);
-
-		if (file.fail()) {
-			std::cerr << " cannot open the output file." << std::endl;
-			file.clear();
-			return;
-		}
-
-		for (unsigned int j = 0; j < it->second.size(); ++j) {
-
-			for (unsigned int k = 0; k < dimensionality; ++k) file << dataset_pt[it->second[j]][k] << "\t";
-			file << it->first << "\n";
-		}
-
-		file.close();
+	if (file.fail()) {
+		std::cerr << " cannot open the output file." << std::endl;
+		file.clear();
+		return;
 	}
+
+	std::sort(dataset_pt.begin(), dataset_pt.end(), asc_id);
+	for (unsigned int i = 0; i < dataset_pt.size(); ++i) file << dataset_pt[i].label << "\n";
+
+	file.close();
 }
 
 // output computation time
