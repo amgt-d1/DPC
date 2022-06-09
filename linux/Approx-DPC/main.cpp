@@ -100,8 +100,6 @@ void local_density_computation_small() {
 
 	end = std::chrono::system_clock::now();
 	double t = std::chrono::duration_cast<std::chrono::microseconds>(end - start).count();
-	std::cout << " local density computation time (1): " << t << "[microsec]\n\n";
-
 	cpu_local_density += t;
 }
 
@@ -147,10 +145,8 @@ void local_density_computation_large() {
 
 	end = std::chrono::system_clock::now();
 	double t = std::chrono::duration_cast<std::chrono::microseconds>(end - start).count();
-	std::cout << " local density computation time (2): " << t << "[microsec]\n\n";
-
-	// update local-density comp. time
 	cpu_local_density += t;
+	std::cout << " local density computation time (2): " << cpu_local_density << "[microsec]\n\n";
 }
 
 // dependent point computation
