@@ -206,7 +206,8 @@ void idx_partition(std::vector<unsigned int>& idx, std::vector<std::vector<pts>>
 			}
 
 			// cost calculation
-			idx_cost[i].first = (count_scan * dataset_subsets[0].size()) + (count_tree * powf(dataset_subsets[0].size(), 1.0 - 1.0 / dimensionality));
+			//idx_cost[i].first = (count_scan * dataset_subsets[0].size()) + (count_tree * powf(dataset_subsets[0].size(), 1.0 - 1.0 / dimensionality));
+			idx_cost[i].first = count_scan + count_tree;
 		}
 	}
 
