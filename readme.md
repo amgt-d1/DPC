@@ -37,7 +37,7 @@
 * For \rho_min and \delta_min, we specify them in `file_io.hpp`.
 
 ### Approximation algorithms
-* If you want to compute rand index,
+* If you want to compute RI (rand index), ARI, or NMI,
 	* get cluster labels from Ex-DPC, and
 	* consult [here](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.adjusted_rand_score.html).
 
