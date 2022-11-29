@@ -36,12 +36,10 @@
 * Set some value in the corresponding txt file in `parameter`.
 * For \rho_min and \delta_min, we specify them in `file_io.hpp`.
 
-### Ex-DPC
-* Uncomment line 211 if you need cluster labels of the exact answer.
-
-
 ### Approximation algorithms
-* If you want to compute rand index, consult [here](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.adjusted_rand_score.html).
+* If you want to compute rand index,
+	* get cluster labels from Ex-DPC, and
+	* consult [here](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.adjusted_rand_score.html).
 
 ## Citation
 If you use our implementation, please cite the following paper.
