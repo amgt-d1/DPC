@@ -16,11 +16,11 @@
 
 ### Linux (Ubuntu)
 * Ex-DPC
-	* Compile: `g++ -O3 Ex-DPC.cpp -o exdpc.out -fopenmp` and run: `./exdpc.out`.
+	* Compile: `g++ -O3 main.cpp -o exdpc.out -fopenmp` and run: `./exdpc.out`.
 * Approc-DPC
 	* Compile: `g++ -O3 main.cpp -o approxdpc.out -fopenmp` and run: `./approxdpc.out`.
 * S-Approc-DPC
-	* Compile: `g++ -O3 S-Approx-DPC.cpp -o sapproxdpc.out -fopenmp` and run: `./sapproxdpc.out`.
+	* Compile: `g++ -O3 main.cpp -o sapproxdpc.out -fopenmp` and run: `./sapproxdpc.out`.
 
 ### Datasets
 * As an example, we have prepared a 2-dimensional synthetic dataset used in our paper.
@@ -33,7 +33,7 @@
 	* Compile the code and run .out file.
 
 ### Parameters
-* Set some value in the corresponding txt file in `_parameter`.
+* Set some value in the corresponding txt file in `parameter`.
 * For \rho_min and \delta_min, we specify them in `file_io.hpp`.
 
 ### Ex-DPC
