@@ -3,6 +3,7 @@
 * They are fast algorithms for [density-peaks clustering](https://science.sciencemag.org/content/344/6191/1492.full) (proposed in Science).
 * As for the details about these algorithms, please read our SIGMOD2021 paper, [Fast Density-Peaks Clustering: Multicore-based Parallelization Approach](https://dl.acm.org/doi/10.1145/3448016.3452781) or [arXiv one](https://arxiv.org/pdf/2207.04649.pdf) that corrects our theoretical analyses.
 * [New] A faster algorithm is available [here](https://github.com/amgt-d1/Ex-DPC-plus-plus) and dynamic cluster update is available [here](https://github.com/amgt-d1/D-DPC).
+	*  I recommend this new version.
 
 ## Requirement
 *  [spatial library](http://spatial.sourceforge.net/)
