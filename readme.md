@@ -19,9 +19,9 @@
 ### Linux (Ubuntu)
 * Ex-DPC
 	* Compile: `g++ -O3 main.cpp -o exdpc.out -fopenmp` and run: `./exdpc.out`.
-* Approc-DPC
+* Approx-DPC
 	* Compile: `g++ -O3 main.cpp -o approxdpc.out -fopenmp` and run: `./approxdpc.out`.
-* S-Approc-DPC
+* S-Approx-DPC
 	* Compile: `g++ -O3 main.cpp -o sapproxdpc.out -fopenmp` and run: `./sapproxdpc.out`.
 
 ### Datasets
